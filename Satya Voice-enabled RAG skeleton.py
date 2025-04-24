@@ -311,7 +311,7 @@ def generate_assistant_response_with_memory(current_transcription, temp):
         "stream": False
     }
     try:
-        response = requests.post("https://d2f5-103-228-40-107.ngrok-free.app/v1/chat/completions",
+        response = requests.post("http://localhost:1234/v1/chat/completions",
                                  headers={"Content-Type": "application/json"}, json=payload)
         response.raise_for_status()
         data = response.json()
@@ -344,7 +344,7 @@ def classify_intent(transcription):
         "stream": False
     }
     try:
-        response = requests.post("https://d2f5-103-228-40-107.ngrok-free.app/v1/chat/completions",
+        response = requests.post("http://localhost:1234/v1/chat/completions",
                                  headers={"Content-Type": "application/json"}, json=payload)
         response.raise_for_status()
         data = response.json()
