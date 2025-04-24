@@ -26,8 +26,8 @@ Key Features
 
 Installation
 1. Clone the Repo
-git clone https://github.com/Pratyaksha35/Satya/blob/main/Satya%20Voice-enabled%20RAG%20skeleton.py
-cd Satya Voice-enabled RAG skeleton.py
+git clone https://github.com/Pratyaksha35/Satya.git
+cd Satya
 
 2. Install Python Dependencies
 pip install -r requirements.txt
